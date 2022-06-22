@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Task</h2>
+    <p>Write a javascript code that prints out your name, height, and country on the screen</p>
+    <p id="demo"></p>
+
+    <script>
+      class Me {
+        constructor(name, height, nationality) {
+          this.name = name;
+          this.height = height;
+          this.nationality = nationality;
+        }
+      }
+
+      const aboutMe = new Me('Okafor Chibuike Patrick', '175cm', 'Nigeria')
+
+      document.getElementById('demo').innerHTML = 'My name is ' + aboutMe.name + ', I am ' + aboutMe.height + ' tall. ' + ' I come from ' + aboutMe.nationality + ' . '
+    </script>
+  </body>
+</html>
